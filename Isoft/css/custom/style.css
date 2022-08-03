@@ -84,12 +84,13 @@
 
 .info-subtitle {
   text-align: center;
-  font-size: 16px;
+  font-size: 29px;
   margin-bottom: 80px;
 }
 
 .title-items-line {
   position: relative;
+  font-size: 58px;
   background: #fff;
   display: inline-block;
   padding: 0px 30px;
@@ -114,11 +115,15 @@
   margin-bottom: 40px;
 }
 .info-list-item:hover .info-list-item-title::after {
-  height: 2px;
+  box-shadow: 0px 0px 0px 1px #00569d;
 }
 .info-list-item-middle {
   flex: 0 0 33%;
   max-width: 33%;
+}
+.info-list-item-footer {
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 .info-list-item-container {
@@ -127,7 +132,8 @@
 
 .info-list-item-title {
   position: relative;
-  font-size: 24px;
+  font-size: 58px;
+  color: #231f20;
   padding-bottom: 5px;
   margin-bottom: 10px;
   font-weight: 700;
@@ -137,14 +143,14 @@
   content: "";
   display: block;
   position: absolute;
-  height: 1px;
+  height: 2px;
   bottom: -2px;
   width: 100%;
   background: #00569d;
 }
 
 .info-list-item-text {
-  font-size: 12px;
+  font-size: 16px;
 }
 /* Middle Item */
 
@@ -187,9 +193,8 @@
   max-width: 230px;
   margin: 0 auto;
   text-align: center;
-  font-size: 14px;
+  font-size: 25px;
   color: #000;
-  font-weight: 700;
   text-transform: none;
   white-space: nowrap;
   overflow: hidden;
@@ -227,7 +232,7 @@
 
 .news-list-item-title {
   display: inline-block;
-  font-size: 22px;
+  font-size: 29px;
   color: #000;
   margin-bottom: 20px;
   border-bottom: 1px solid transparent;
@@ -237,9 +242,14 @@
   color: #00569c;
   text-decoration: underline;
 }
-.news-list-item-title:hover + .news-list-item-link .news-arrow {
-  color: #00569d;
+.news-list-item-link {
+  font-size: 20px;
+  max-width: 250px;
+  line-height: 1.2;
 }
+/* .news-list-item-title:hover + .news-list-item-link .news-arrow {
+  color: #00569d;
+} */
 .news-list-item-top {
   margin-bottom: 50px;
 }
@@ -259,6 +269,7 @@
   flex: auto;
   max-width: initial;
 }
+
 .news-list-content-middle {
   flex: auto;
   max-width: initial;
@@ -387,5 +398,8 @@
   .footer-banner-content,
   .main-banner-content {
     font-size: 38px;
+  }
+  .info-list-item-title {
+    font-size: 44px;
   }
 }
