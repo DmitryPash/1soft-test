@@ -99,7 +99,7 @@
 /* Top Item */
 .info-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 100px;
   margin-bottom: 50px;
@@ -112,14 +112,14 @@
   flex: 0 0 25%;
   max-width: 25%;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 55px;
 }
 .info-list-item:hover .info-list-item-title::after {
   box-shadow: 0px 0px 0px 1px #00569d;
 }
 .info-list-item-middle {
-  flex: 0 0 33%;
-  max-width: 33%;
+  flex: auto;
+  max-width: initial;
 }
 .info-list-item-footer {
   flex: 0 0 100%;
@@ -317,6 +317,9 @@
   .news-list-middle-img {
     flex: 0 0 50%;
     max-width: 50%;
+  }
+  .info-list-item-title {
+    font-size: 48px;
   }
 }
 
